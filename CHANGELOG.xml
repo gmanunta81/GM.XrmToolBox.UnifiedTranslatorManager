@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<changelog>
+  <version number="1.0.0.1" releaseDate="2026-05-30">
+    <changes>
+      <change type="New" description="Initial public release of the Unified Translator Manager plugin." />
+      <change type="New" description="Single-record translation workflow: edit target cells directly in the grid with automatic Modified flag and yellow highlight." />
+      <change type="New" description="Bulk translation workflow: export visible rows to Excel (.xlsx), edit externally, and re-import changed target values." />
+      <change type="New" description="Excel export/import implementation using only System.IO.Compression + System.Xml (no ClosedXML or OpenXML SDK dependencies, avoiding System.Memory assembly conflicts inside XrmToolBox host)." />
+      <change type="New" description="In-grid editing: EditMode=EditOnEnter (single click to start editing), live target-cell updates without DataTable rebinding during editing, immediate yellow highlight on commit." />
+      <change type="New" description="Scope selector supporting Table, Form, Choices, and combinations." />
+      <change type="New" description="Solution-scoped loading (strongly recommended) or full unmanaged-metadata scan with explicit warning dialog." />
+      <change type="New" description="Warning prompt when loading a session without a specific solution selected, advising user that the operation may take a very long time on large environments." />
+      <change type="New" description="Built-in Help button in the toolbar with step-by-step instructions for both single-record and bulk translation workflows." />
+      <change type="New" description="Toolbar actions: Load context, Load session, Save changes, Publish changed, Publish all, Help, Close." />
+      <change type="New" description="Real-time status updates and row counters (total visible / modified) during edit, save, and publish operations." />
+      <change type="New" description="Auto-managed Modified checkbox column (read-only, computed from target != original), preventing destructive user toggles." />
+      <change type="New" description="Support for translating tables, forms, fields, choices (option sets), views, business process flows, and other Dataverse / Dynamics 365 metadata components." />
+      <change type="New" description="Import summary dialog showing changed / unchanged / not found / ambiguous / duplicate / invalid rows after Excel import." />
+      <change type="New" description="Filter panel: search text, scope (table/form/choices), solution picker, entity picker, source/target language pickers, checkboxes (only modified / only empty target / only empty source)." />
+      <change type="New" description="Export/import round-trip preserves row identity via Entity + Key + Property column matching (no manual GUID handling required)." />
+      <change type="New" description="Save operation writes modified rows back to Dataverse; Publish operation publishes only the touched entities or the entire solution." />
+      <change type="New" description="Session state tracking: detects unsaved changes and prompts for confirmation before closing or loading a new session." />
+      <change type="New" description="Supports both base-language source display and target-language editing in a single grid view." />
+    </changes>
+  </version>
+</changelog>

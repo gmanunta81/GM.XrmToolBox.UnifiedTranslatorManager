@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+	<id>GM.XrmToolBox.UnifiedTranslatorManager</id>
+	<version>1.0.0.1</version>
+	<title>Unified Translator Manager for XrmToolBox</title>
+	<authors>GM</authors>
+	<owners>GM</owners>
+	<projectUrl>https://github.com/GM/GM.XrmToolBox.UnifiedTranslatorManager</projectUrl>
+	<license type="file">License.txt</license>
+	<readme>README.md</readme>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<description>
+	  XrmToolBox plugin to manage Dataverse / Dynamics 365 metadata translations
+	  (tables, forms, fields, choices, views, business process flows, ...) from a
+	  single grid. Supports inline editing and a full Excel (.xlsx) export/import
+	  round-trip with no third-party dependencies. Includes a built-in Help dialog
+	  with step-by-step instructions for both the single-record and the bulk
+	  translation workflows.
+	</description>
+	<summary>Manage Dataverse / Dynamics 365 metadata translations from one grid, with Excel round-trip.</summary>
+	<releaseNotes>
+	  1.0.0.1
+	  - Initial public release.
+	  - Inline target-cell editing with auto-managed Modified flag and yellow highlight.
+	  - Excel export/import using only System.IO.Compression + System.Xml (no ClosedXML / OpenXML SDK).
+	  - Warning when loading a session against ALL unmanaged metadata.
+	  - Built-in Help dialog with step-by-step instructions.
+	</releaseNotes>
+	<copyright>Copyright (c) 2025 GM</copyright>
+	<tags>XrmToolBox Dataverse Dynamics365 CDS Translation Localization Metadata Excel Plugin</tags>
+	<dependencies>
+	  <dependency id="XrmToolBoxPackage" version="1.2025.7.71" />
+	</dependencies>
+  </metadata>
+  <files>
+	<!-- Plugin assembly (XrmToolBox loads anything dropped under Plugins\). -->
+	<file src="bin\Release\GM.XrmToolBox.UnifiedTranslatorManager.dll" target="lib\net48\Plugins\GM.XrmToolBox.UnifiedTranslatorManager.dll" />
+	<file src="bin\Release\GM.XrmToolBox.UnifiedTranslatorManager.pdb" target="lib\net48\Plugins\GM.XrmToolBox.UnifiedTranslatorManager.pdb" />
+	<!-- Documentation files referenced from the package metadata. -->
+	<file src="License.txt" target="License.txt" />
+	<file src="README.md" target="README.md" />
+  </files>
+</package>
