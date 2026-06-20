@@ -2,14 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
 	<id>GM.XrmToolBox.UnifiedTranslatorManager</id>
-	<version>1.0.0.1</version>
+	<version>1.0.0.2</version>
 	<title>Unified Translator Manager for XrmToolBox</title>
 	<authors>GM</authors>
 	<owners>GM</owners>
-	<projectUrl>https://github.com/GM/GM.XrmToolBox.UnifiedTranslatorManager</projectUrl>
-	<license type="file">License.txt</license>
-	<readme>README.md</readme>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<projectUrl>https://github.com/gmanunta81/GM.XrmToolBox.UnifiedTranslatorManager</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/gmanunta81/GM.XrmToolBox.UnifiedTranslatorManager/master/assets/icon.png</iconUrl>
+
+
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<description>
 	  XrmToolBox plugin to manage Dataverse / Dynamics 365 metadata translations
 	  (tables, forms, fields, choices, views, business process flows, ...) from a
@@ -30,15 +31,15 @@
 	<copyright>Copyright (c) 2025 GM</copyright>
 	<tags>XrmToolBox Dataverse Dynamics365 CDS Translation Localization Metadata Excel Plugin</tags>
 	<dependencies>
-	  <dependency id="XrmToolBoxPackage" version="1.2025.7.71" />
+	  <dependency id="XrmToolBox" version="1.2018.3.21" />
 	</dependencies>
   </metadata>
   <files>
 	<!-- Plugin assembly (XrmToolBox loads anything dropped under Plugins\). -->
 	<file src="bin\Release\GM.XrmToolBox.UnifiedTranslatorManager.dll" target="lib\net48\Plugins\GM.XrmToolBox.UnifiedTranslatorManager.dll" />
 	<file src="bin\Release\GM.XrmToolBox.UnifiedTranslatorManager.pdb" target="lib\net48\Plugins\GM.XrmToolBox.UnifiedTranslatorManager.pdb" />
-	<!-- Documentation files referenced from the package metadata. -->
-	<file src="License.txt" target="License.txt" />
-	<file src="README.md" target="README.md" />
+	<!-- Documentation and branding files. -->
+
+	
   </files>
 </package>
