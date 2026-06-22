@@ -2,15 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
 	<id>GM.XrmToolBox.UnifiedTranslatorManager</id>
-	<version>1.0.0.2</version>
+	<version>1.0.0.3</version>
 	<title>Unified Translator Manager for XrmToolBox</title>
-	<authors>GM</authors>
-	<owners>GM</owners>
+	<authors>Giovanni Manunta</authors>
+	<owners>Giovanni Manunta</owners>
 	<projectUrl>https://github.com/gmanunta81/GM.XrmToolBox.UnifiedTranslatorManager</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/gmanunta81/GM.XrmToolBox.UnifiedTranslatorManager/master/assets/icon.png</iconUrl>
-
-
-	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<description>
 	  XrmToolBox plugin to manage Dataverse / Dynamics 365 metadata translations
 	  (tables, forms, fields, choices, views, business process flows, ...) from a
@@ -21,14 +19,17 @@
 	</description>
 	<summary>Manage Dataverse / Dynamics 365 metadata translations from one grid, with Excel round-trip.</summary>
 	<releaseNotes>
-	  1.0.0.1
-	  - Initial public release.
-	  - Inline target-cell editing with auto-managed Modified flag and yellow highlight.
-	  - Excel export/import using only System.IO.Compression + System.Xml (no ClosedXML / OpenXML SDK).
-	  - Warning when loading a session against ALL unmanaged metadata.
-	  - Built-in Help dialog with step-by-step instructions.
+		1.0.0.3
+		- Assembly Info Fixes
+		1.0.0.2
+		- Assembly Info Fixes
+		1.0.0.1
+		- Initial public release.
+		- Inline target-cell editing with auto-managed Modified flag and yellow highlight.
+		- Excel export/import using only System.IO.Compression + System.Xml (no ClosedXML / OpenXML SDK).
+		- Warning when loading a session against ALL unmanaged metadata.
+		- Built-in Help dialog with step-by-step instructions.
 	</releaseNotes>
-	<copyright>Copyright (c) 2025 GM</copyright>
 	<tags>XrmToolBox Dataverse Dynamics365 CDS Translation Localization Metadata Excel Plugin</tags>
 	<dependencies>
 	  <dependency id="XrmToolBox" version="1.2018.3.21" />

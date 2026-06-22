@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <changelog>
+  <version number="1.0.0.3" releaseDate="2026-05-30">
+    <changes>
+      <change type="Fix" description="Assembly Info Fixes." />
+    </changes>
+  </version>
   <version number="1.0.0.2" releaseDate="2026-05-30">
+	<changes>
+		<change type="Fix" description="Assembly Info Fixes." />
+	</changes>
+  </version>
+  <version number="1.0.0.1" releaseDate="2026-05-30">
     <changes>
       <change type="New" description="Initial public release of the Unified Translator Manager plugin." />
       <change type="New" description="Single-record translation workflow: edit target cells directly in the grid with automatic Modified flag and yellow highlight." />
